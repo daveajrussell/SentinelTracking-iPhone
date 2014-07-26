@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5518201016FDF4540036C6DC /* SentinelServiceHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5518200F16FDF4540036C6DC /* SentinelServiceHelper.mm */; };
+		5518201516FDF78D0036C6DC /* SentinelTrackingService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5518201416FDF78D0036C6DC /* SentinelTrackingService.mm */; };
+		5518201816FDFED10036C6DC /* SentinelLocationEntityManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5518201716FDFED10036C6DC /* SentinelLocationEntityManager.mm */; };
+		551E2BDF16FF256B00172B82 /* SentinelSplashViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 551E2BDE16FF256B00172B82 /* SentinelSplashViewController.mm */; };
+		551E2BE316FF272D00172B82 /* SentinelAuthenticationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 551E2BE216FF272D00172B82 /* SentinelAuthenticationViewController.mm */; };
+		5529788916FA0D9B0049A1EE /* SentinelTrackingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5529788716FA0D9B0049A1EE /* SentinelTrackingViewController.mm */; };
+		553413D816F9B830005A9876 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553413D716F9B830005A9876 /* UIKit.framework */; };
+		553413DA16F9B830005A9876 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553413D916F9B830005A9876 /* Foundation.framework */; };
+		553413DC16F9B830005A9876 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553413DB16F9B830005A9876 /* CoreGraphics.framework */; };
+		553413DE16F9B830005A9876 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553413DD16F9B830005A9876 /* CoreData.framework */; };
+		553413E416F9B830005A9876 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 553413E216F9B830005A9876 /* InfoPlist.strings */; };
+		553413E616F9B830005A9876 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 553413E516F9B830005A9876 /* main.mm */; };
+		553413EA16F9B830005A9876 /* SentinelAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 553413E916F9B830005A9876 /* SentinelAppDelegate.mm */; };
+		553413EC16F9B830005A9876 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 553413EB16F9B830005A9876 /* Default.png */; };
+		553413EE16F9B830005A9876 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 553413ED16F9B830005A9876 /* Default@2x.png */; };
+		553413F016F9B830005A9876 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 553413EF16F9B830005A9876 /* Default-568h@2x.png */; };
+		553413F316F9B830005A9876 /* SentinelTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 553413F116F9B830005A9876 /* SentinelTracking.xcdatamodeld */; };
+		55768D2916FF949E00D596FC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2716FF949E00D596FC /* AddressBook.framework */; };
+		55768D2A16FF949E00D596FC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2816FF949E00D596FC /* AddressBookUI.framework */; };
+		55768D3216FF94E600D596FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2B16FF94E600D596FC /* AudioToolbox.framework */; };
+		55768D3316FF94E600D596FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2C16FF94E600D596FC /* AVFoundation.framework */; };
+		55768D3416FF94E600D596FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2D16FF94E600D596FC /* CoreMedia.framework */; };
+		55768D3516FF94E600D596FC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2E16FF94E600D596FC /* CoreVideo.framework */; };
+		55768D3616FF94E600D596FC /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D2F16FF94E600D596FC /* libiconv.2.4.0.dylib */; };
+		55768D3716FF94E600D596FC /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D3016FF94E600D596FC /* libiconv.2.dylib */; };
+		55768D3816FF94E600D596FC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768D3116FF94E600D596FC /* libiconv.dylib */; };
+		55768D4016FF9C8800D596FC /* beep-beep.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 55768D3F16FF9C8800D596FC /* beep-beep.aiff */; };
+		55768D4417007A3B00D596FC /* SentinelBreakViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55768D4317007A3B00D596FC /* SentinelBreakViewController.mm */; };
+		55A57D3416FCB1890036B511 /* SentinelTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A57D3316FCB1880036B511 /* SentinelTracking.storyboard */; };
+		55A57D4616FD061F0036B511 /* SentinelSessionEntityManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55A57D4516FD061E0036B511 /* SentinelSessionEntityManager.mm */; };
+		55A57D4816FD11210036B511 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A57D4716FD11210036B511 /* CoreLocation.framework */; };
+		55A57D4A16FD13700036B511 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A57D4916FD13700036B511 /* MapKit.framework */; };
+		55D86EE016FF923D006E4429 /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D86EDD16FF9206006E4429 /* libZXingWidget.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55D86EDC16FF9206006E4429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D86ED416FF9206006E4429 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+		55D86EDE16FF9206006E4429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D86ED416FF9206006E4429 /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
+			remoteInfo = ZXingTests;
+		};
+		55D86EE116FF92A9006E4429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55D86ED416FF9206006E4429 /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5518200E16FDF4540036C6DC /* SentinelServiceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelServiceHelper.h; sourceTree = "<group>"; };
+		5518200F16FDF4540036C6DC /* SentinelServiceHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelServiceHelper.mm; sourceTree = "<group>"; };
+		5518201316FDF78D0036C6DC /* SentinelTrackingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelTrackingService.h; sourceTree = "<group>"; };
+		5518201416FDF78D0036C6DC /* SentinelTrackingService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelTrackingService.mm; sourceTree = "<group>"; };
+		5518201616FDFED10036C6DC /* SentinelLocationEntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelLocationEntityManager.h; sourceTree = "<group>"; };
+		5518201716FDFED10036C6DC /* SentinelLocationEntityManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelLocationEntityManager.mm; sourceTree = "<group>"; };
+		551E2BDD16FF256B00172B82 /* SentinelSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelSplashViewController.h; sourceTree = "<group>"; };
+		551E2BDE16FF256B00172B82 /* SentinelSplashViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelSplashViewController.mm; sourceTree = "<group>"; };
+		551E2BE116FF272D00172B82 /* SentinelAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelAuthenticationViewController.h; sourceTree = "<group>"; };
+		551E2BE216FF272D00172B82 /* SentinelAuthenticationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelAuthenticationViewController.mm; sourceTree = "<group>"; };
+		5529788616FA0D9B0049A1EE /* SentinelTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelTrackingViewController.h; sourceTree = "<group>"; };
+		5529788716FA0D9B0049A1EE /* SentinelTrackingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelTrackingViewController.mm; sourceTree = "<group>"; };
+		553413D316F9B830005A9876 /* SentinelTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentinelTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553413D716F9B830005A9876 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		553413D916F9B830005A9876 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		553413DB16F9B830005A9876 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		553413DD16F9B830005A9876 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		553413E116F9B830005A9876 /* SentinelTracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SentinelTracking-Info.plist"; sourceTree = "<group>"; };
+		553413E316F9B830005A9876 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		553413E516F9B830005A9876 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		553413E716F9B830005A9876 /* SentinelTracking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SentinelTracking-Prefix.pch"; sourceTree = "<group>"; };
+		553413E816F9B830005A9876 /* SentinelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentinelAppDelegate.h; sourceTree = "<group>"; };
+		553413E916F9B830005A9876 /* SentinelAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelAppDelegate.mm; sourceTree = "<group>"; };
+		553413EB16F9B830005A9876 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		553413ED16F9B830005A9876 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		553413EF16F9B830005A9876 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		553413F216F9B830005A9876 /* SentinelTracking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SentinelTracking.xcdatamodel; sourceTree = "<group>"; };
+		55768D2716FF949E00D596FC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		55768D2816FF949E00D596FC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		55768D2B16FF94E600D596FC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		55768D2C16FF94E600D596FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55768D2D16FF94E600D596FC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		55768D2E16FF94E600D596FC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		55768D2F16FF94E600D596FC /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		55768D3016FF94E600D596FC /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
+		55768D3116FF94E600D596FC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		55768D3F16FF9C8800D596FC /* beep-beep.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "beep-beep.aiff"; path = "../../zxing-2.1/iphone/ScanTest/beep-beep.aiff"; sourceTree = "<group>"; };
+		55768D4217007A3B00D596FC /* SentinelBreakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelBreakViewController.h; sourceTree = "<group>"; };
+		55768D4317007A3B00D596FC /* SentinelBreakViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelBreakViewController.mm; sourceTree = "<group>"; };
+		55A57D3316FCB1880036B511 /* SentinelTracking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SentinelTracking.storyboard; sourceTree = "<group>"; };
+		55A57D4416FD061E0036B511 /* SentinelSessionEntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentinelSessionEntityManager.h; sourceTree = "<group>"; };
+		55A57D4516FD061E0036B511 /* SentinelSessionEntityManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SentinelSessionEntityManager.mm; sourceTree = "<group>"; };
+		55A57D4716FD11210036B511 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55A57D4916FD13700036B511 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		55D86ED416FF9206006E4429 /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = "../../zxing-2.1/iphone/ZXingWidget/ZXingWidget.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		553413D016F9B830005A9876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55768D3216FF94E600D596FC /* AudioToolbox.framework in Frameworks */,
+				55768D3316FF94E600D596FC /* AVFoundation.framework in Frameworks */,
+				55768D3416FF94E600D596FC /* CoreMedia.framework in Frameworks */,
+				55768D3516FF94E600D596FC /* CoreVideo.framework in Frameworks */,
+				55768D3616FF94E600D596FC /* libiconv.2.4.0.dylib in Frameworks */,
+				55768D3716FF94E600D596FC /* libiconv.2.dylib in Frameworks */,
+				55768D3816FF94E600D596FC /* libiconv.dylib in Frameworks */,
+				55768D2916FF949E00D596FC /* AddressBook.framework in Frameworks */,
+				55768D2A16FF949E00D596FC /* AddressBookUI.framework in Frameworks */,
+				55D86EE016FF923D006E4429 /* libZXingWidget.a in Frameworks */,
+				55A57D4A16FD13700036B511 /* MapKit.framework in Frameworks */,
+				55A57D4816FD11210036B511 /* CoreLocation.framework in Frameworks */,
+				553413D816F9B830005A9876 /* UIKit.framework in Frameworks */,
+				553413DA16F9B830005A9876 /* Foundation.framework in Frameworks */,
+				553413DC16F9B830005A9876 /* CoreGraphics.framework in Frameworks */,
+				553413DE16F9B830005A9876 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5518201216FDF7710036C6DC /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				5529788616FA0D9B0049A1EE /* SentinelTrackingViewController.h */,
+				5529788716FA0D9B0049A1EE /* SentinelTrackingViewController.mm */,
+				5518201316FDF78D0036C6DC /* SentinelTrackingService.h */,
+				5518201416FDF78D0036C6DC /* SentinelTrackingService.mm */,
+				5518201616FDFED10036C6DC /* SentinelLocationEntityManager.h */,
+				5518201716FDFED10036C6DC /* SentinelLocationEntityManager.mm */,
+				55768D4217007A3B00D596FC /* SentinelBreakViewController.h */,
+				55768D4317007A3B00D596FC /* SentinelBreakViewController.mm */,
+			);
+			name = Tracking;
+			sourceTree = "<group>";
+		};
+		5518201916FE76D10036C6DC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				55A57D4416FD061E0036B511 /* SentinelSessionEntityManager.h */,
+				55A57D4516FD061E0036B511 /* SentinelSessionEntityManager.mm */,
+				551E2BDD16FF256B00172B82 /* SentinelSplashViewController.h */,
+				551E2BDE16FF256B00172B82 /* SentinelSplashViewController.mm */,
+				551E2BE116FF272D00172B82 /* SentinelAuthenticationViewController.h */,
+				551E2BE216FF272D00172B82 /* SentinelAuthenticationViewController.mm */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		5518201A16FE76F70036C6DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5518200E16FDF4540036C6DC /* SentinelServiceHelper.h */,
+				5518200F16FDF4540036C6DC /* SentinelServiceHelper.mm */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		553413C816F9B830005A9876 = {
+			isa = PBXGroup;
+			children = (
+				55768D2B16FF94E600D596FC /* AudioToolbox.framework */,
+				55768D2C16FF94E600D596FC /* AVFoundation.framework */,
+				55768D2D16FF94E600D596FC /* CoreMedia.framework */,
+				55768D2E16FF94E600D596FC /* CoreVideo.framework */,
+				55768D2F16FF94E600D596FC /* libiconv.2.4.0.dylib */,
+				55768D3016FF94E600D596FC /* libiconv.2.dylib */,
+				55768D3116FF94E600D596FC /* libiconv.dylib */,
+				55768D2716FF949E00D596FC /* AddressBook.framework */,
+				55768D2816FF949E00D596FC /* AddressBookUI.framework */,
+				55D86ED416FF9206006E4429 /* ZXingWidget.xcodeproj */,
+				55A57D4916FD13700036B511 /* MapKit.framework */,
+				55A57D4716FD11210036B511 /* CoreLocation.framework */,
+				553413DF16F9B830005A9876 /* SentinelTracking */,
+				553413D616F9B830005A9876 /* Frameworks */,
+				553413D416F9B830005A9876 /* Products */,
+				55768D3E16FF9C2800D596FC /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		553413D416F9B830005A9876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553413D316F9B830005A9876 /* SentinelTracking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553413D616F9B830005A9876 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				553413D716F9B830005A9876 /* UIKit.framework */,
+				553413D916F9B830005A9876 /* Foundation.framework */,
+				553413DB16F9B830005A9876 /* CoreGraphics.framework */,
+				553413DD16F9B830005A9876 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		553413DF16F9B830005A9876 /* SentinelTracking */ = {
+			isa = PBXGroup;
+			children = (
+				5518201A16FE76F70036C6DC /* Helpers */,
+				5518201916FE76D10036C6DC /* Authentication */,
+				5518201216FDF7710036C6DC /* Tracking */,
+				55A57D3316FCB1880036B511 /* SentinelTracking.storyboard */,
+				553413E816F9B830005A9876 /* SentinelAppDelegate.h */,
+				553413E916F9B830005A9876 /* SentinelAppDelegate.mm */,
+				553413F116F9B830005A9876 /* SentinelTracking.xcdatamodeld */,
+				553413E016F9B830005A9876 /* Supporting Files */,
+			);
+			path = SentinelTracking;
+			sourceTree = "<group>";
+		};
+		553413E016F9B830005A9876 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				553413E116F9B830005A9876 /* SentinelTracking-Info.plist */,
+				553413E216F9B830005A9876 /* InfoPlist.strings */,
+				553413E516F9B830005A9876 /* main.mm */,
+				553413E716F9B830005A9876 /* SentinelTracking-Prefix.pch */,
+				553413EB16F9B830005A9876 /* Default.png */,
+				553413ED16F9B830005A9876 /* Default@2x.png */,
+				553413EF16F9B830005A9876 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55768D3E16FF9C2800D596FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55768D3F16FF9C8800D596FC /* beep-beep.aiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		55D86ED516FF9206006E4429 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55D86EDD16FF9206006E4429 /* libZXingWidget.a */,
+				55D86EDF16FF9206006E4429 /* ZXingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		553413D216F9B830005A9876 /* SentinelTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553413F616F9B830005A9876 /* Build configuration list for PBXNativeTarget "SentinelTracking" */;
+			buildPhases = (
+				553413CF16F9B830005A9876 /* Sources */,
+				553413D016F9B830005A9876 /* Frameworks */,
+				553413D116F9B830005A9876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55D86EE216FF92A9006E4429 /* PBXTargetDependency */,
+			);
+			name = SentinelTracking;
+			productName = SentinelTracking;
+			productReference = 553413D316F9B830005A9876 /* SentinelTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		553413CA16F9B830005A9876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Sentinel;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "David Russell";
+			};
+			buildConfigurationList = 553413CD16F9B830005A9876 /* Build configuration list for PBXProject "SentinelTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 553413C816F9B830005A9876;
+			productRefGroup = 553413D416F9B830005A9876 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55D86ED516FF9206006E4429 /* Products */;
+					ProjectRef = 55D86ED416FF9206006E4429 /* ZXingWidget.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				553413D216F9B830005A9876 /* SentinelTracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55D86EDD16FF9206006E4429 /* libZXingWidget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZXingWidget.a;
+			remoteRef = 55D86EDC16FF9206006E4429 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55D86EDF16FF9206006E4429 /* ZXingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZXingTests.octest;
+			remoteRef = 55D86EDE16FF9206006E4429 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		553413D116F9B830005A9876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553413E416F9B830005A9876 /* InfoPlist.strings in Resources */,
+				553413EC16F9B830005A9876 /* Default.png in Resources */,
+				553413EE16F9B830005A9876 /* Default@2x.png in Resources */,
+				553413F016F9B830005A9876 /* Default-568h@2x.png in Resources */,
+				55A57D3416FCB1890036B511 /* SentinelTracking.storyboard in Resources */,
+				55768D4016FF9C8800D596FC /* beep-beep.aiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		553413CF16F9B830005A9876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553413E616F9B830005A9876 /* main.mm in Sources */,
+				553413EA16F9B830005A9876 /* SentinelAppDelegate.mm in Sources */,
+				553413F316F9B830005A9876 /* SentinelTracking.xcdatamodeld in Sources */,
+				5529788916FA0D9B0049A1EE /* SentinelTrackingViewController.mm in Sources */,
+				55A57D4616FD061F0036B511 /* SentinelSessionEntityManager.mm in Sources */,
+				5518201016FDF4540036C6DC /* SentinelServiceHelper.mm in Sources */,
+				5518201516FDF78D0036C6DC /* SentinelTrackingService.mm in Sources */,
+				5518201816FDFED10036C6DC /* SentinelLocationEntityManager.mm in Sources */,
+				551E2BDF16FF256B00172B82 /* SentinelSplashViewController.mm in Sources */,
+				551E2BE316FF272D00172B82 /* SentinelAuthenticationViewController.mm in Sources */,
+				55768D4417007A3B00D596FC /* SentinelBreakViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55D86EE216FF92A9006E4429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXingWidget;
+			targetProxy = 55D86EE116FF92A9006E4429 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		553413E216F9B830005A9876 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				553413E316F9B830005A9876 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		553413F416F9B830005A9876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/dave/Work/zxing-2.1/iphone/ZXingWidget/Classes/**",
+					"/Users/dave/Work/zxing-2.1/cpp/core/src",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		553413F516F9B830005A9876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/dave/Work/zxing-2.1/iphone/ZXingWidget/Classes/**",
+					"/Users/dave/Work/zxing-2.1/cpp/core/src",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		553413F716F9B830005A9876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SentinelTracking/SentinelTracking-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"/Users/dave/Work/zxing-2.1/cpp/core/src/",
+					"/Users/dave/Work/zxing-2.1/iphone/ZXingWidget/Classes/**",
+				);
+				INFOPLIST_FILE = "SentinelTracking/SentinelTracking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		553413F816F9B830005A9876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SentinelTracking/SentinelTracking-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"/Users/dave/Work/zxing-2.1/cpp/core/src/",
+					"/Users/dave/Work/zxing-2.1/iphone/ZXingWidget/Classes/**",
+				);
+				INFOPLIST_FILE = "SentinelTracking/SentinelTracking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		553413CD16F9B830005A9876 /* Build configuration list for PBXProject "SentinelTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553413F416F9B830005A9876 /* Debug */,
+				553413F516F9B830005A9876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553413F616F9B830005A9876 /* Build configuration list for PBXNativeTarget "SentinelTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553413F716F9B830005A9876 /* Debug */,
+				553413F816F9B830005A9876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		553413F116F9B830005A9876 /* SentinelTracking.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				553413F216F9B830005A9876 /* SentinelTracking.xcdatamodel */,
+			);
+			currentVersion = 553413F216F9B830005A9876 /* SentinelTracking.xcdatamodel */;
+			path = SentinelTracking.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 553413CA16F9B830005A9876 /* Project object */;
+}

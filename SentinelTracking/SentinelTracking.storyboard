@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M3t-la-jYR">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Sentinel Authentication View Controller - loginView-->
+        <scene sceneID="fr4-lI-d4K">
+            <objects>
+                <viewController storyboardIdentifier="authenticationController" title="loginView" wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nwu-qX-fJb" customClass="SentinelAuthenticationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmw-uI-dde">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="center" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="I50-Tl-eh4">
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OA-OA-7bU">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htA-7p-WZi">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="ISA-qI-1u6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csy-yy-zlz">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRU-bB-dve">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="hjw-cm-TKu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLoginTapped:" destination="Nwu-qX-fJb" eventType="touchUpInside" id="kXx-fb-PIr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="htA-7p-WZi" secondAttribute="trailing" constant="2" id="35U-3H-dF6"/>
+                                    <constraint firstItem="csy-yy-zlz" firstAttribute="top" secondItem="htA-7p-WZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8Yi-hX-bCe"/>
+                                    <constraint firstItem="htA-7p-WZi" firstAttribute="trailing" secondItem="csy-yy-zlz" secondAttribute="trailing" type="default" id="MYL-48-34E"/>
+                                    <constraint firstItem="csy-yy-zlz" firstAttribute="leading" secondItem="hRU-bB-dve" secondAttribute="leading" type="default" id="Qxi-Ih-Ks6"/>
+                                    <constraint firstItem="hRU-bB-dve" firstAttribute="bottom" secondItem="5OA-OA-7bU" secondAttribute="bottom" type="default" id="VIP-Q9-pwp"/>
+                                    <constraint firstItem="hRU-bB-dve" firstAttribute="trailing" secondItem="csy-yy-zlz" secondAttribute="trailing" type="default" id="d9J-lU-Dzf"/>
+                                    <constraint firstItem="htA-7p-WZi" firstAttribute="top" secondItem="5OA-OA-7bU" secondAttribute="top" constant="53" id="duB-hZ-hdI"/>
+                                    <constraint firstItem="csy-yy-zlz" firstAttribute="centerX" secondItem="5OA-OA-7bU" secondAttribute="centerX" type="default" id="qZM-MA-Ets"/>
+                                    <constraint firstItem="csy-yy-zlz" firstAttribute="leading" secondItem="htA-7p-WZi" secondAttribute="leading" type="default" id="r1e-Zj-W04"/>
+                                    <constraint firstItem="hRU-bB-dve" firstAttribute="top" secondItem="csy-yy-zlz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rP6-Jr-74H"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="I50-Tl-eh4" secondAttribute="bottom" constant="148" id="5L3-j0-6eK"/>
+                            <constraint firstItem="I50-Tl-eh4" firstAttribute="top" secondItem="5OA-OA-7bU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ytv-8i-CCi"/>
+                            <constraint firstItem="5OA-OA-7bU" firstAttribute="centerX" secondItem="I50-Tl-eh4" secondAttribute="centerX" type="default" id="cvs-OC-mTK"/>
+                            <constraint firstItem="5OA-OA-7bU" firstAttribute="top" secondItem="bmw-uI-dde" secondAttribute="top" constant="124" id="iNG-Va-x3m"/>
+                            <constraint firstItem="5OA-OA-7bU" firstAttribute="centerX" secondItem="bmw-uI-dde" secondAttribute="centerX" type="default" id="n5w-FR-fOD"/>
+                            <constraint firstItem="5OA-OA-7bU" firstAttribute="leading" secondItem="bmw-uI-dde" secondAttribute="leading" constant="66" id="qbV-fk-fMD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="hRU-bB-dve" id="HQ0-GH-du6"/>
+                        <outlet property="indProgress" destination="I50-Tl-eh4" id="qcl-Ru-ARh"/>
+                        <outlet property="loginView" destination="5OA-OA-7bU" id="LUy-Cp-UGx"/>
+                        <outlet property="txtPassword" destination="csy-yy-zlz" id="Qmh-D9-VYv"/>
+                        <outlet property="txtUsername" destination="htA-7p-WZi" id="AaO-sp-r3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVq-wl-88O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="-284"/>
+        </scene>
+        <!--Sentinel Splash View Controller - splashView-->
+        <scene sceneID="Awu-eZ-IbA">
+            <objects>
+                <viewController storyboardIdentifier="authenticationLogic" title="splashView" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M3t-la-jYR" customClass="SentinelSplashViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mcj-hB-hs1">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="phZ-xC-trs">
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="phZ-xC-trs" firstAttribute="centerY" secondItem="Mcj-hB-hs1" secondAttribute="centerY" type="default" id="0Ar-5v-aFP"/>
+                            <constraint firstItem="phZ-xC-trs" firstAttribute="centerX" secondItem="Mcj-hB-hs1" secondAttribute="centerX" type="default" id="4T9-eu-eJ5"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="hmQ-Lg-tCM" kind="modal" id="JwS-oc-5Ln"/>
+                        <segue destination="Nwu-qX-fJb" kind="modal" id="owl-de-Swx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoN-Da-a8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="-284"/>
+        </scene>
+        <!--Sentinel Tracking View Controller - mapView-->
+        <scene sceneID="Lzn-Ls-0js">
+            <objects>
+                <viewController storyboardIdentifier="trackingController" title="mapView" wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hmQ-Lg-tCM" customClass="SentinelTrackingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0VC-D7-EWy">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUJ-EX-LVL">
+                                <items>
+                                    <barButtonItem title="Logout" id="YF6-1S-ZPT">
+                                        <connections>
+                                            <action selector="btnLogoutTapped:" destination="hmQ-Lg-tCM" id="WeE-Ou-08f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Break" id="J3o-pF-tog">
+                                        <connections>
+                                            <action selector="btnBreakTapped:" destination="hmQ-Lg-tCM" id="oYU-BC-8o1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="camera" id="A8K-vj-Iym">
+                                        <connections>
+                                            <action selector="btnScanTapped:" destination="hmQ-Lg-tCM" id="k50-su-GiR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xuq-nt-mDG"/>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xuq-nt-mDG" firstAttribute="top" secondItem="0VC-D7-EWy" secondAttribute="top" type="default" id="AU7-kE-Vrt"/>
+                            <constraint firstItem="Xuq-nt-mDG" firstAttribute="trailing" secondItem="0VC-D7-EWy" secondAttribute="trailing" type="default" id="EcD-hN-jDn"/>
+                            <constraint firstItem="RUJ-EX-LVL" firstAttribute="leading" secondItem="0VC-D7-EWy" secondAttribute="leading" type="default" id="bNM-aX-oZA"/>
+                            <constraint firstItem="RUJ-EX-LVL" firstAttribute="bottom" secondItem="0VC-D7-EWy" secondAttribute="bottom" type="default" id="fcX-7S-LwN"/>
+                            <constraint firstItem="Xuq-nt-mDG" firstAttribute="leading" secondItem="0VC-D7-EWy" secondAttribute="leading" type="default" id="lfn-Yn-urV"/>
+                            <constraint firstItem="RUJ-EX-LVL" firstAttribute="top" secondItem="Xuq-nt-mDG" secondAttribute="bottom" type="default" id="qsb-Ba-SaX"/>
+                            <constraint firstItem="RUJ-EX-LVL" firstAttribute="trailing" secondItem="0VC-D7-EWy" secondAttribute="trailing" type="default" id="uEz-gb-XA6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b9p-S0-lu4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnBreak" destination="J3o-pF-tog" id="p3A-vx-O8O"/>
+                        <outlet property="btnLogout" destination="YF6-1S-ZPT" id="FxF-mR-4qP"/>
+                        <outlet property="btnScan" destination="A8K-vj-Iym" id="IMW-3c-hNP"/>
+                        <outlet property="mapView" destination="Xuq-nt-mDG" id="QMa-n2-nUn"/>
+                        <segue destination="Nwu-qX-fJb" kind="modal" id="1Y9-b6-5qz"/>
+                        <segue destination="dHi-WC-ubV" kind="modal" id="6gv-18-VBD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wK-kr-a8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="82"/>
+        </scene>
+        <!--Sentinel Break View Controller - breakView-->
+        <scene sceneID="sPj-wE-Tnk">
+            <objects>
+                <viewController storyboardIdentifier="breakLogic" title="breakView" wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dHi-WC-ubV" customClass="SentinelBreakViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sxv-Sh-uoa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-vj-gRu">
+                                <items>
+                                    <barButtonItem enabled="NO" title="Clock In" id="g9O-Ui-XmD">
+                                        <connections>
+                                            <action selector="btnClockInTapped:" destination="dHi-WC-ubV" id="wSo-tL-Hxn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="" textAlignment="center" lineBreakMode="middleTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuN-nd-SpT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="Ioo-xd-DQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="86T-Aw-42a">
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UuN-nd-SpT" firstAttribute="top" secondItem="Sxv-Sh-uoa" secondAttribute="top" constant="154" id="8UQ-dy-Pn5"/>
+                            <constraint firstItem="j7m-vj-gRu" firstAttribute="trailing" secondItem="Sxv-Sh-uoa" secondAttribute="trailing" type="default" id="Ja7-zg-eDO"/>
+                            <constraint firstItem="86T-Aw-42a" firstAttribute="centerX" secondItem="UuN-nd-SpT" secondAttribute="centerX" type="default" id="NSH-XQ-lsV"/>
+                            <constraint firstItem="j7m-vj-gRu" firstAttribute="bottom" secondItem="Sxv-Sh-uoa" secondAttribute="bottom" type="default" id="NwJ-8x-2Ng"/>
+                            <constraint firstAttribute="trailing" secondItem="UuN-nd-SpT" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VMi-Nt-LyY"/>
+                            <constraint firstItem="86T-Aw-42a" firstAttribute="centerY" secondItem="Sxv-Sh-uoa" secondAttribute="centerY" type="default" id="YJa-pR-xI1"/>
+                            <constraint firstItem="j7m-vj-gRu" firstAttribute="leading" secondItem="Sxv-Sh-uoa" secondAttribute="leading" type="default" id="h1s-Rb-IF9"/>
+                            <constraint firstItem="UuN-nd-SpT" firstAttribute="leading" secondItem="Sxv-Sh-uoa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wQc-Kl-0bv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnClockIn" destination="g9O-Ui-XmD" id="bsP-Nn-CWd"/>
+                        <outlet property="indProgress" destination="86T-Aw-42a" id="l9z-uK-BVU"/>
+                        <outlet property="lblTimer" destination="UuN-nd-SpT" id="RNU-z1-irp"/>
+                        <segue destination="hmQ-Lg-tCM" kind="modal" id="7vJ-rx-erg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjW-2u-5aY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="810"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SentinelAuthenticationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SentinelAuthenticationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnLoginTapped:"/>
+                <relationship kind="outlet" name="btnLogin" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="indProgress" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loginView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="txtPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtUsername" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SentinelBreakViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SentinelBreakViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnClockInTapped:"/>
+                <relationship kind="outlet" name="btnClockIn" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="indProgress" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="lblTimer" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SentinelSplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SentinelSplashViewController.h"/>
+        </class>
+        <class className="SentinelTrackingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SentinelTrackingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnBreakTapped:"/>
+                <relationship kind="action" name="btnLogoutTapped:"/>
+                <relationship kind="action" name="btnScanTapped:"/>
+                <relationship kind="outlet" name="btnBreak" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="btnLogout" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="btnScan" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="owl-de-Swx"/>
+        <segue reference="7vJ-rx-erg"/>
+    </inferredMetricsTieBreakers>
+</document>

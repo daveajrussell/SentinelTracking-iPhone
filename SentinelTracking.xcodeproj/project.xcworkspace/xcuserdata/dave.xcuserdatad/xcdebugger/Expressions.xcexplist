@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[SentinelBreakViewController canUserGoOnBreak]:SentinelBreakViewController.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "!breakTaken">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelUILoginSegue perform]:SentinelUILoginSegue.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelLoginLogic viewDidAppear:]:SentinelLoginLogic.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.authenticate">
+            </PersistentString>
+            <PersistentString
+               value = "self.code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelLoginViewController prepareForSegue:sender:]:SentinelLoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "loginSegue.strUsername">
+            </PersistentString>
+            <PersistentString
+               value = "_txtPassword.text">
+            </PersistentString>
+            <PersistentString
+               value = "_txtUsername.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelTrackingViewController locationManager:didFailWithError:]:SentinelTrackingViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "error.code">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelLocationEntityManager getDataJson]:SentinelLocationEntityManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "objects[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelTrackingService connection:didReceiveResponse:]:SentinelTrackingService.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[httpResponse statusCode]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelLoginLogic viewDidLoad]:SentinelLoginLogic.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.strUsername">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelLoginViewController btnLoginTapped:]:SentinelLoginViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelLoginLogic connection:didReceiveResponse:]:SentinelLoginLogic.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelEntityManager isExistingSession]:SentinelEntityManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[sessionData count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelBreakViewController updateCountdown]:SentinelBreakViewController.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "minuteComponent.minute">
+            </PersistentString>
+            <PersistentString
+               value = "[minuteComponent minute]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelEntityManager deleteSessionInformation]:SentinelEntityManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_fetchRequest">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SentinelAuthenticationLogic viewDidAppear:]:SentinelAuthenticationLogic.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.existingSession">
+            </PersistentString>
+            <PersistentString
+               value = "self.code">
+            </PersistentString>
+            <PersistentString
+               value = "self.authenticate">
+            </PersistentString>
+            <PersistentString
+               value = "self.logout">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
